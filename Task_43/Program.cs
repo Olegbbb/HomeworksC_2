@@ -1,0 +1,12 @@
+﻿Console.Clear();
+Console.WriteLine("Введите коэффициент k первой прямой");
+double k1 = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Введите коэффициент b первой прямой");
+double b1 = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Введите коэффициент k второй прямой");
+double k2 = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Введите коэффициент b второй прямой");
+double b2 = Convert.ToDouble(Console.ReadLine());
+double x = Math.Round((b1 - b2) / (k2 - k1), 1); 
+double y = Math.Round(k1 * x + b1, 1); 
+Console.WriteLine("Координаты точки пересечения прямых: " + x + "; " + y);
